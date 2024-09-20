@@ -1,0 +1,34 @@
+.app-title {
+  position: relative;
+
+  &__text {
+    font-family: $font-cgr;
+    font-weight: $font-weight-black;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 5px;
+    display: block;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  &__line {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgba($color: #fff, $alpha: 0.2);
+
+    &::before {
+      position: absolute;
+      content: '';
+      left: 0;
+      top: 2px;
+      width: 30px;
+      height: 5px;
+      background-color: rgba($color: #fff, $alpha: 0.2);
+      clip-path: polygon(0 0, 100% 0, 70% 100%, 0 100%);
+    }
+  }
+}

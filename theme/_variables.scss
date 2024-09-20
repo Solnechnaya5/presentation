@@ -1,0 +1,40 @@
+// Fonts
+@font-face {
+  font-family: 'Grumaz';
+  src: local('grumaz'),
+    url(~@/assets/fonts/grumaz/Grumaz.otf) format('opentype');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CormorantGaramond-Regular';
+  src: url(~@/assets/fonts/CormorantGaramond/CormorantGaramond-Regular.ttf)
+    format('truetype');
+  font-display: swap;
+}
+
+$font-grumaz: 'Grumaz', sans-serif;
+
+$font-cgr: 'CormorantGaramond-Regular', sans-serif;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+// Colors
+
+$white-color: #ffffff;
+
+// Brake points
+$tablet-wide: 992px;
+$tablet: 768px;
+$phone: 420px;
+
+// fs
+$size-25: 33px;
+$size-22: 29px;
+$size-20: 26px;
+$size-16: 21px;
+$size-14: 18px;

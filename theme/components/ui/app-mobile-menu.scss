@@ -1,0 +1,81 @@
+.app-mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  background: #090b14;
+
+  transition: 0.3s all ease-in-out;
+  z-index: 100;
+  &.active {
+    transition: 0.3s all ease-in-out;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+  }
+  &__body {
+    padding: 32px 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex: 1;
+    transition: 0.3s all ease-in-out;
+    overflow-y: auto;
+  }
+
+  &__list {
+    padding: 0 20px;
+    transition: 0.3s all ease-in-out;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    overflow-y: auto;
+    li {
+      text-transform: uppercase;
+      color: $white-color;
+      &.disabled {
+        opacity: 0.3;
+      }
+      a {
+        width: 100%;
+        text-shadow: 0 0 10px #ffffff, 2px 2px 2px rgba(212, 197, 152, 0);
+        display: inline-block;
+        padding: 8px 0;
+        font-size: 26px;
+        line-height: 1.5;
+        font-weight: $font-weight-bold;
+        color: $white-color;
+        position: relative;
+
+        &.nuxt-link-exact-active {
+          // padding-left: 40px;
+
+          // &::before {
+          //   content: '';
+          //   position: absolute;
+          //   left: 0;
+          //   top: 50%;
+          //   transform: translateY(-50%);
+          //   width: 28px;
+          //   height: 8px;
+          //   background-color: #fe41e4;
+          //   box-shadow: 0px -3px 26px #fe41e4;
+          // }
+        }
+
+        @media (max-width: $phone) {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  &__burger {
+    position: fixed;
+    right: 16px;
+    top: 16px;
+  }
+}

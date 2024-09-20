@@ -1,0 +1,34 @@
+.page-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  &__main {
+    flex-grow: 1;
+    background-color: #090b14;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.page-layout-header {
+  // background-image: url('/assets/images/pages/bg.png');
+  background-size: cover;
+  background-position: top 35% center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 40vh;
+
+  @media (max-width: $tablet) {
+    height: 230px;
+  }
+
+  &__separator {
+    position: absolute;
+    bottom: -5px;
+    height: auto;
+    width: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

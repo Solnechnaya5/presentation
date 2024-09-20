@@ -1,0 +1,33 @@
+@import 'variables';
+@import 'mixins';
+@import 'defaults';
+
+// Layout
+@import './components/layout/app-header';
+@import './components/layout/app-footer';
+
+// Ui
+@import './components/ui/app-menu-burger';
+@import './components/ui/app-mobile-menu';
+@import './components/ui/app-btn';
+@import './components/ui/app-input';
+@import './components/ui/app-title';
+@import './components/ui/app-register-form';
+@import './components/ui/app-close-btn';
+// Pages
+@import './pages/home';
+// Sections
+@import './components/sections/app-intro-section';
+@import './components/sections/app-introdution-section';
+@import './components/sections/app-news-section';
+@import './components/sections/app-gen-section';
+@import './components/sections/app-register-section';
+@import './components/sections/app-portal-section';
+@import './components/sections/app-choose-section';
+@import './components/sections/app-roadmap-section';
+
+// Modals
+@import './modals/app-modal';
+@import './modals/app-register-modal';
+
+// Nuxt layouts

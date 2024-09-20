@@ -1,0 +1,100 @@
+.app-btn {
+  position: relative;
+  padding: 10px 70px;
+  border-radius: 25px;
+  background-color: #ebdfd2;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 0.3s all ease-in-out;
+
+  animation: pulse 1.5s infinite;
+
+  &:hover {
+    &::before {
+      border: 2px solid #67a4ff;
+    }
+  }
+
+  &:disabled,
+  &[disabled] {
+    opacity: 0.5;
+    animation-play-state: paused;
+  }
+
+  @media (max-width: 1000px) {
+    padding: 10px 45px;
+  }
+
+  &::before {
+    position: absolute;
+    content: '';
+    left: 2px;
+    top: 2px;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    border-radius: 25px;
+    border: 2px solid #a59d99;
+    transition: 0.3s all ease-in-out;
+    transform: translateZ(0);
+  }
+  &__body {
+    display: flex;
+    &.withIcon {
+      .app-btn__icon {
+        display: flex;
+      }
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35px;
+    height: 35px;
+    border: 1px solid #a59d99;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    i {
+      font-size: 24px !important;
+    }
+    svg {
+      width: 25px;
+      height: 25px;
+      fill: #a59d99;
+      g {
+        fill: #a59d99;
+      }
+    }
+
+    @media (max-width: $tablet) {
+      left: 5px;
+      width: 25px;
+      height: 25px;
+      i {
+        font-size: 16px !important;
+      }
+      svg {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+  &__text {
+    color: #2c303a;
+    font-weight: $font-weight-bold;
+    font-size: 18px;
+    line-height: 30px;
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+      line-height: 18px;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+#Pages
+pages/forgot-password
+pages/loading
+pages/register
+pages/reset-password
+pages/success-verify
+pages/dashboard/chats

@@ -1,0 +1,27 @@
+.rpg-section {
+  background-image: url('/assets/images/rpg/bg.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: relative;
+
+  @media (max-width: $tablet) {
+    background-position: left 80% top 50%;
+  }
+  &__list {
+    max-width: 530px;
+  }
+
+  &__body {
+    @media (max-width: $tablet-wide) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @media (max-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

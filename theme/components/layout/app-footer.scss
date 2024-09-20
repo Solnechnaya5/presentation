@@ -1,0 +1,120 @@
+.app-footer {
+  // height: 100vh;
+  background-color: #000;
+  color: #fff;
+
+  // background-image: url('/assets/images/footer/bg.png');
+  // background-size: cover;
+  // background-position: center;
+  // background-repeat: no-repeat;
+
+  &__body {
+    padding: 80px 0;
+    display: grid;
+    place-items: center;
+  }
+
+  &__text {
+    // font-size: $size-20;
+  }
+
+  // &__title {
+  //   cursor: pointer;
+  //   margin-top: 32px;
+  // }
+}
+
+.footer {
+  
+  border-bottom: 1px solid rgba($color: #fff, $alpha: 0.3);
+
+  // @media (max-width: $tablet) {
+  //   align-items: center;
+  //   flex-direction: column;
+  //   padding: 16px 0;
+  // }
+  // a {
+  //   color: #fff;
+  //   opacity: 0.3;
+  //   transition: 0.3s all ease-in-out;
+  //   &:hover {
+  //     opacity: 1;
+  //   }
+  // }
+
+  // &__logo {
+  //   flex: 0 0 160px;
+  //   svg {
+  //     width: 100px;
+  //     fill: #fff;
+  //     opacity: 0.3;
+  //   }
+
+  //   @media (max-width: $tablet) {
+  //     flex: unset;
+  //   }
+  // }
+
+  // &__list {
+  //   margin: 16px 0;
+  //   flex: 1 0;
+  //   display: flex;
+  //   column-gap: 50px;
+  //   row-gap: 16px;
+  //   flex-wrap: wrap;
+  //   @media (max-width: $tablet) {
+  //     flex: unset;
+  //     flex-direction: column;
+  //     align-items: center;
+  //   }
+  // }
+
+  // &__terms {
+  //   flex: 0 0 160px;
+  //   @media (max-width: $tablet) {
+  //     flex: unset;
+  //   }
+  // }
+
+  // &-copy {
+  //   text-align: center;
+  //   font-size: 12px;
+  //   margin-bottom: 32px;
+  //   opacity: 0.3;
+  // }
+}
+
+// .footer-socials {
+//   padding: 16px 0 32px 0;
+//   display: flex;
+//   justify-content: center;
+//   &__list {
+//     display: flex;
+//     gap: 15px;
+//   }
+
+//   &__item {
+//     a {
+//       display: block;
+//       line-height: 0;
+//       width: 40px;
+//       height: 40px;
+//       border-radius: 50%;
+//       overflow: hidden;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       background-color: #fff;
+//       // opacity: 0.3;
+//     }
+
+//     svg {
+//       width: 24px;
+//       height: 24px;
+//       // opacity: 0.6;
+//     }
+//   }
+
+//   &__link {
+//   }
+// }

@@ -1,0 +1,59 @@
+.team-section {
+  background-image: url('/assets/images/monetization/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__descr {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+
+.team-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  margin-bottom: 100px;
+
+  @media (max-width: $tablet-wide) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: $phone) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.team-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__image {
+    max-width: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    @media (max-width: $tablet-wide) {
+      max-width: 250px;
+    }
+    img {
+      object-position: center;
+      object-fit: cover;
+    }
+  }
+
+  &__name {
+    margin-top: 10px;
+    white-space: nowrap;
+  }
+
+  &__post {
+    margin-top: 10px;
+    opacity: 0.5;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+}

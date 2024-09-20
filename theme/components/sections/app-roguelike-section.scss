@@ -1,0 +1,26 @@
+.roguelike-section {
+  background-image: url('/assets/images/roguelike/bg.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  position: relative;
+
+  @media (max-width: $tablet) {
+    background-position: left 80% top 50%;
+  }
+  &__list {
+    max-width: 530px;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    @media (max-width: $tablet-wide) {
+      align-items: center;
+    }
+    @media (max-width: $tablet) {
+      align-items: center;
+    }
+  }
+}
